@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clarusway Survey Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form class="form">
+      <h1>Clarusway Survey Form</h1>
+      <p class="form-text">Thank you for taking the time to help us improve the platform</p>
+      <div class="form-row">
+        <label for="name" class="form-label">Name</label>
+        <input type="text" name="name" id="name" class="form-input" placeholder="Enter your name" />
+      </div>
+      <div class="form-row">
+        <label for="surname" class="form-label">Surname</label>
+        <input type="text" name="surname" id="surname" class="form-input" placeholder="Enter your surname" />
+      </div>
+      <div class="form-row">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" name="email" id="email" class="form-input" placeholder="user@clarusway.com" />
+      </div>
+      <div class="form-row">
+        <label for="role" class="form-label big-label">Which option best describes your current role?</label>
+        <select name="role" id="role">
+          <option value="" disabled selected>select current role</option>
+          <option value="student">Student</option>
+          <option value="teacher">Teacher</option>
+          <option value="community">Full Time Job</option>
+          <option value="part-time">Part Time Job</option>
+        </select>
+      </div>
+      <div class="form-row">
+        <label for="recommend" class="form-label big-label">Would you recommend Clarusway to a friend?</label>
+        <div class="input-row">
+          <input type="radio" name="recommend" id="yes" class="form-input" value="Definitely, Yes" />
+          <label for="yes" class="input-label">Definitely, Yes</label>
+        </div>
+        <div class="input-row">
+          <input type="radio" name="recommend" id="maybe" class="form-input" value="Maybe" />
+          <label for="maybe" class="input-label">Maybe</label>
+        </div>
+        <div class="input-row">
+          <input type="radio" name="recommend" id="not-sure" class="form-input" value="not-sure" />
+          <label for="not-sure" class="input-label">Not sure</label>
+        </div>
+        <div class="input-row">
+          <input type="radio" name="recommend" id="no" class="form-input" value="Definitely, No" />
+          <label for="no" class="input-label">Definitely, No</label>
+        </div>
+      </div>
+      <div class="form-row">
+        <label for="feature" class="form-label big-label">What is your favorite feature of Clarusway?</label>
+        <select name="feature" id="feature">
+          <option value="" disabled selected>select an option</option>
+          <option value="courses">Courses</option>
+          <option value="projects">Projects</option>
+          <option value="community">Community</option>
+          <option value="Mentors">Mentors</option>
+        </select>
+      </div>
+      <div class="form-row">
+        <label for="improve" class="form-label big-label">What would you like to see improved? (Check all that apply)</label>
+        <div class="input-row">
+          <input type="checkbox" name="improve" id="front-end" class="form-input" value="Front-end Projects" />
+          <label for="front-end" class="input-label">Front-end Projects</label>
+        </div>
+        <div class="input-row">
+          <input type="checkbox" name="improve" id="back-end" class="form-input" value="back-end-project" />
+          <label for="back-end" class="input-label">Back-end Projects</label>
+        </div>
+        <div class="input-row">
+          <input type="checkbox" name="improve" id="data-science" class="form-input" value="data-science" />
+          <label for="data-science" class="input-label">Data Science</label>
+        </div>
+        <div class="input-row">
+          <input type="checkbox" name="improve" id="additional-courses" class="form-input" value="additional-courses" />
+          <label for="additional-courses" class="input-label">Additional Courses</label>
+        </div>
+      </div>
+      <div class="form-row">
+        <label for="textarea" class="form-label big-label"> Any comments or suggestions? </label>
+        <textarea name="comments" id="textarea" class="form-textarea" placeholder="Enter your comment here... Thanks for your comments..."></textarea>
+      </div>
+      <div class="form-row"><button type="submit" class="form-submit">Submit</button></div>
+    </form>
+  </body>
+</html>
